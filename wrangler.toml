@@ -1,0 +1,14 @@
+name = "claudflar-hono"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "claudflar-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+# Set the real value with: wrangler secret put APP_TOKEN
+[vars]
+APP_TOKEN = "change-me-in-dev"
